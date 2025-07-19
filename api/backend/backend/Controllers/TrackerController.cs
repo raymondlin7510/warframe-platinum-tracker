@@ -56,8 +56,8 @@ namespace backend.Controllers
             return new JsonResult("Added Successfully");
         }
 
-        [HttpPost("delete_task")]
-        public JsonResult delete_task([FromForm] string id)
+        [HttpPost("delete_item")]
+        public JsonResult delete_item([FromForm] string id)
         {
             string query = "delete from plat_list where id=@id";
             DataTable table = new DataTable();
