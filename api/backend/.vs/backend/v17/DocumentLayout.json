@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zhoul\\OneDrive\\Desktop\\PersonalCode\\Summer Projects\\Warframe Plat Tracker\\warframe-platinum-tracker\\api\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Tony\\Desktop\\projects\\warframe-platinum-tracker\\api\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C81D577A-2E42-4DD8-9137-975843775F44}|backend\\backend.csproj|c:\\users\\zhoul\\onedrive\\desktop\\personalcode\\summer projects\\warframe plat tracker\\warframe-platinum-tracker\\api\\backend\\backend\\controllers\\trackercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C81D577A-2E42-4DD8-9137-975843775F44}|backend\\backend.csproj|c:\\users\\tony\\desktop\\projects\\warframe-platinum-tracker\\api\\backend\\backend\\controllers\\trackercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C81D577A-2E42-4DD8-9137-975843775F44}|backend\\backend.csproj|solutionrelative:backend\\controllers\\trackercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C81D577A-2E42-4DD8-9137-975843775F44}|backend\\backend.csproj|c:\\users\\tony\\desktop\\projects\\warframe-platinum-tracker\\api\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C81D577A-2E42-4DD8-9137-975843775F44}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +18,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tony\\Desktop\\projects\\warframe-platinum-tracker\\api\\backend\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tony\\Desktop\\projects\\warframe-platinum-tracker\\api\\backend\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-21T21:13:13.373Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TrackerController.cs",
-              "DocumentMoniker": "C:\\Users\\zhoul\\OneDrive\\Desktop\\PersonalCode\\Summer Projects\\Warframe Plat Tracker\\warframe-platinum-tracker\\api\\backend\\backend\\Controllers\\TrackerController.cs",
+              "DocumentMoniker": "C:\\Users\\Tony\\Desktop\\projects\\warframe-platinum-tracker\\api\\backend\\backend\\Controllers\\TrackerController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\TrackerController.cs",
-              "ToolTip": "C:\\Users\\zhoul\\OneDrive\\Desktop\\PersonalCode\\Summer Projects\\Warframe Plat Tracker\\warframe-platinum-tracker\\api\\backend\\backend\\Controllers\\TrackerController.cs",
+              "ToolTip": "C:\\Users\\Tony\\Desktop\\projects\\warframe-platinum-tracker\\api\\backend\\backend\\Controllers\\TrackerController.cs",
               "RelativeToolTip": "backend\\Controllers\\TrackerController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowDsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwCEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-19T17:43:40.622Z",
               "EditorCaption": ""

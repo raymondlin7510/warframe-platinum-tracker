@@ -1,17 +1,30 @@
 <div class="wrapper">
   <h1 class="title">Warframe Platinum Tracker</h1>
 
+  <div class="inputRow">
+    <input class="itemTextbox" type="text" placeholder="Enter item" [(ngModel)]="newitem"> <input type="number" placeholder="Enter price" [(ngModel)]="newprice">  <button (click)="add_item()">Add Item</button>
+  </div>
+
   <div class="titleRow">
     <p class="col acquired">Acquired</p>
     <p class="col item">Item</p>
     <p class="col price">Price (p)</p>
   </div>
 
-  <div class="row">
-    <p class="col acquired">
-      <input type="checkbox" />
-    </p>
-    <p class="col item">Atlas Prime Blueprint</p>
-    <p class="col price">3</p>
+  <div className="allItems" *ngFor="let item of items">
+    <div class="row">
+      <p class="col acquired">
+        <input type="checkbox" ng-change="update_total()">
+      </p>
+      <p class="col item">{{item.item}}</p>
+      <p class="col price" style="color: #D1D5DB">{{item.price}}</p>
+    </div>
+    <button (click)="delete_item(item.id)">Delete Item</button>
   </div>
+
+  <div class="remainingRow">
+    <h3>Total Platinum</h3>
+    <h1 class="title">{{checked_total}}p</h1>
+  </div>
+
 </div>

@@ -22,16 +22,6 @@
         "tags": [
           "Tracker"
         ],
-        "parameters": [
-          {
-            "name": "price",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
             "multipart/form-data": {
@@ -40,11 +30,17 @@
                 "properties": {
                   "item": {
                     "type": "string"
+                  },
+                  "price": {
+                    "type": "string"
                   }
                 }
               },
               "encoding": {
                 "item": {
+                  "style": "form"
+                },
+                "price": {
                   "style": "form"
                 }
               }
@@ -58,7 +54,7 @@
         }
       }
     },
-    "/delete_task": {
+    "/delete_item": {
       "post": {
         "tags": [
           "Tracker"

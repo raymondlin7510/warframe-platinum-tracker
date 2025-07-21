@@ -30,6 +30,29 @@
     background-color: #4a5568;
 }
 
+.inputRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.inputRow input {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.inputRow button {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.itemTextbox {
+  width: 1000px;
+}
+
+
 input[type="checkbox"] {
     transform: scale(1.2);
     accent-color: #6366f1;
@@ -55,4 +78,15 @@ input[type="checkbox"] {
   width: 100px;
   padding-right: 10rem;
   text-align: center;
+}
+
+.remainingRow {
+  text-align: center;
+  background-color: #4a5568;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.remainingRow h3 {
+  color: #D1D5DB;
 }

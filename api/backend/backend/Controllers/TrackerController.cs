@@ -36,25 +36,26 @@ namespace backend.Controllers
         }
 
         [HttpPost("add_item")]
-        public JsonResult add_item([FromForm] string item, int price)
+        public JsonResult add_item([FromForm] string item, [FromForm] string price)
         {
+            int parsedPrice = int.Parse(price);
             string query = "insert into plat_list(checked, item , price) values (0, @item, @price)";
-            DataTable table = new DataTable();
             string SqlDatasource = _configuration.GetConnectionString("wfdb");
-            SqlDataReader myHeader;
+
             using (SqlConnection myCon = new SqlConnection(SqlDatasource))
             {
                 myCon.Open();
                 using (SqlCommand myCommand = new SqlCommand(query, myCon))
                 {
                     myCommand.Parameters.AddWithValue("@item", item);
-                    myCommand.Parameters.AddWithValue("@price",price);
-                    myHeader = myCommand.ExecuteReader();
-                    table.Load(myHeader);
+                    myCommand.Parameters.AddWithValue("@price", parsedPrice);
+                    myCommand.ExecuteNonQuery();
                 }
             }
+
             return new JsonResult("Added Successfully");
         }
+
 
         [HttpPost("delete_item")]
         public JsonResult delete_item([FromForm] string id)

@@ -14,7 +14,7 @@
       },
       {
         "Name": "price",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -22,8 +22,8 @@
   },
   {
     "ContainingType": "backend.Controllers.TrackerController",
-    "Method": "delete_task",
-    "RelativePath": "delete_task",
+    "Method": "delete_item",
+    "RelativePath": "delete_item",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
