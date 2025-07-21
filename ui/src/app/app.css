@@ -1,0 +1,58 @@
+.wrapper {
+  max-width: 75%;
+  margin: 10px auto;
+  background-color: #2d3748;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.titleRow {
+    background-color: #4a5568;
+    font-weight: bold;
+    display: flex;
+}
+
+.row {
+    background-color: #2d3748;
+    display: flex;
+}
+
+.row:hover {
+    background-color: #4a5568;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    accent-color: #6366f1;
+}
+
+.col {
+  padding: 0.75rem 1rem;
+}
+
+.acquired {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.item {
+  flex: 1;
+}
+
+.price {
+  width: 100px;
+  padding-right: 10rem;
+  text-align: center;
+}
