@@ -11,10 +11,10 @@
     <p class="col price">Price (p)</p>
   </div>
 
-  <div className="allItems" *ngFor="let item of items">
+  <div class="allItems" *ngFor="let item of items">
     <div class="row">
       <p class="col acquired">
-        <input type="checkbox" ng-change="update_total()">
+        <input type="checkbox" [checked]="checkedIds.has(item.id)" (change)="toggleCheckbox(item)"/>
       </p>
       <p class="col item">{{item.item}}</p>
       <p class="col price" style="color: #D1D5DB">{{item.price}}</p>

@@ -16,7 +16,10 @@ export class App {
   protected readonly title = signal('ui');
 
   items:any=[];
+  
   checked_total=0;
+  checkedIds = new Set<number>();
+
   newitem="";
   newprice="";
 
@@ -56,6 +59,20 @@ export class App {
   }
 
   update_total() {
-    
+  this.checked_total = this.items
+    .filter((item: any) => this.checkedIds.has(item.id))
+    .reduce((sum: number, item: any) => sum + Number(item.price), 0);
+}
+
+
+  toggleCheckbox(item: any) {
+    if (this.checkedIds.has(item.id)) {
+      this.checkedIds.delete(item.id);
+    } else {
+      this.checkedIds.add(item.id);
+    }
+
+    this.update_total();
   }
+
 }
