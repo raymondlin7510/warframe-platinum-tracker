@@ -17,6 +17,43 @@
         }
       }
     },
+    "/update_checked": {
+      "post": {
+        "tags": [
+          "Tracker"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "checkStatus": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "encoding": {
+                "id": {
+                  "style": "form"
+                },
+                "checkStatus": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/add_item": {
       "post": {
         "tags": [

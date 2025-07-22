@@ -35,13 +35,31 @@ namespace backend.Controllers
             return new JsonResult(table);
         }
 
+        [HttpPost("update_checked")]
+        public JsonResult update_checked([FromForm] string id, [FromForm] bool checkStatus)
+        {
+            string query = "update plat_list set checked = @checked where id = @id";
+            string SqlDatasource = _configuration.GetConnectionString("wfdb");
+            SqlDataReader myHeader;
+            using (SqlConnection myCon = new SqlConnection(SqlDatasource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myCommand.Parameters.AddWithValue("@checked", checkStatus ? 1 : 0);
+                    myCommand.Parameters.AddWithValue("@id", id);
+                    myCommand.ExecuteNonQuery();
+                }
+            }
+            return new JsonResult("Updated checked successfully");
+        }
+
         [HttpPost("add_item")]
         public JsonResult add_item([FromForm] string item, [FromForm] string price)
         {
             int parsedPrice = int.Parse(price);
             string query = "insert into plat_list(checked, item , price) values (0, @item, @price)";
             string SqlDatasource = _configuration.GetConnectionString("wfdb");
-
             using (SqlConnection myCon = new SqlConnection(SqlDatasource))
             {
                 myCon.Open();
