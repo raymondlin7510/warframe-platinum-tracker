@@ -58,7 +58,7 @@ export class App {
 
   update_total() {
     this.checked_total = this.items
-      .filter((item: any) => item.checked)
+      .filter((item: any) => !item.checked)
       .reduce((sum: number, item: any) => sum + Number(item.price), 0);
   }
 
